@@ -927,8 +927,27 @@ footer__social-list-item a {
 	background: #f0f0f4;
 	border-radius: 3px;
 	padding: 4px 22px;
+	border: none;
+	outline: none;
 }
 .catalog__filter-display-option {
 }
 
+.catalog__filter-btngrid,
+.catalog__filter-btnrow {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.catalog__filter-btngrid {
+	background-image: url("../images/btngrid.svg");
+}
+.catalog__filter-btnrow {
+	background-image: url("../images/btnrow.svg");
+}
 /* Catalog Section end */
