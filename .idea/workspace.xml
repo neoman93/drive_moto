@@ -19,7 +19,14 @@
         <item name="GROUP_NODE:moto" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:moto" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:moto/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf799821-a094-4a6e-941d-e9e6928daea0" name="Default Changelist" comment="" />
@@ -54,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616603475799</updated>
       <workItem from="1616603477768" duration="92000" />
-      <workItem from="1616603585460" duration="6107000" />
+      <workItem from="1616603585460" duration="6216000" />
     </task>
     <servers />
   </component>
@@ -66,7 +73,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="moto/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
