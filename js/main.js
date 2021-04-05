@@ -26,4 +26,18 @@ $(function () {
 		prevArrow: '<button class="product-slider__slider-btn product-slider__slider-ptnprev"><img src="images/arrov-black-left.svg" alt="Arrow Prev"></button>',
 		nextArrow: '<button class="product-slider__slider-btn product-slider__slider-ptnnext"><img src="images/arrov-black-right.svg" alt="Arrow Next"></button>',
 	});
+
+	$(".filter__item-drop").on("click", function () {
+		$(this).toggleClass("filter__item-drop--active");
+		$(this).next().slideToggle(200);
+	});
+
+	$(".js-range-slider").ionRangeSlider({
+		grid: false,
+		type: "double",
+		min: 100000,
+		max: 500000,
+	});
+
+	$(".filter-style").styler();
 });
