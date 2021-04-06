@@ -1024,6 +1024,9 @@ footer__social-list-item a {
 	display: flex;
 	justify-content: space-between;
 }
+.catalog__inner-aside .tabs-wrapper {
+	padding-right: 10px;
+}
 .aside-filter__tab {
 	font-family: "SFProDisplay-Bold", sans-serif;
 	font-weight: 400;
@@ -1076,11 +1079,12 @@ footer__social-list-item a {
 }
 .aside-filter__content {
 	display: flex;
-	flex-wrap: nowrap;
-	margin-top: 20px;
+	flex-wrap: wrap;
+	margin-top: 10px;
 }
 .aside-filter__content-box {
 	width: 50%;
+	margin-bottom: 10px;
 }
 
 .aside-filter__content-label {
@@ -1165,10 +1169,10 @@ footer__social-list-item a {
 }
 
 .irs-min::before {
-	content: "ot";
+	content: "от";
 }
 .irs-max::before {
-	content: "do";
+	content: "до";
 }
 
 .irs--flat .irs-line {
@@ -1208,12 +1212,92 @@ footer__social-list-item a {
 
 .aside-filter__item-list {
 	margin: 80px 0 40px;
+}
+.filter__item-list {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid #c4c4c4;
+	padding-top: 34px;
 }
 .filter__item-list-title {
+	font-family: "SFProDisplay-Semibold", sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	padding-bottom: 14px;
+	padding-left: 20px;
 	font-weight: 600;
+}
+.filter__item-list-select {
+	font-family: "Barlow", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: #48494d;
+}
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active {
+	background: transparent;
+	box-shadow: none;
+}
+
+.jq-selectbox__select {
+	font-family: "Barlow", sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	color: #48494d;
+	height: 20px;
+	padding: 0 20px 0 10px;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	text-shadow: none;
+}
+.jq-selectbox__trigger {
+	position: absolute;
+	top: 6px;
+	right: 9px;
+	width: 34px;
+	height: 100%;
+	border-left: none;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+	border: none;
+}
+
+.jq-selectbox__trigger {
+	background-image: url("../images/arrow-down.svg");
+	bottom: 5px;
+	width: 12px;
+	height: 8px;
+}
+
+.jq-selectbox__trigger-arrow {
+	position: absolute;
+	top: 14px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: none;
+}
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+	background: rgba(107, 126, 172, 0.05);
+	color: rgba(0, 0, 0, 0.6);
+}
+.jq-selectbox li {
+	color: rgba(0, 0, 0, 0.6);
+}
+.jq-selectbox__dropdown {
+	border-radius: none;
+	padding-top: 15px;
+}
+
+.aside-filter__filter-more {
+	width: 100%;
+}
+.aside-filter__filter-more-btn {
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration-line: underline;
+	color: #1c62cd;
 }
