@@ -1298,6 +1298,7 @@ footer__social-list-item a {
 .aside-filter__filter-more-btn {
 	font-size: 14px;
 	line-height: 17px;
-	text-decoration-line: underline;
+	text-decoration: none;
 	color: #1c62cd;
+	border-bottom: 1px solid #1c62cd;
 }
