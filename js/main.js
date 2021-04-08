@@ -27,7 +27,7 @@ $(function () {
 		nextArrow: '<button class="product-slider__slider-btn product-slider__slider-ptnnext"><img src="images/arrov-black-right.svg" alt="Arrow Next"></button>',
 	});
 
-	$(".filter__item-drop").on("click", function () {
+	$(".filter__item-drop, .filter__extra").on("click", function () {
 		$(this).toggleClass("filter__item-drop--active");
 		$(this).next().slideToggle(200);
 	});
