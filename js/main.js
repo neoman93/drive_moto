@@ -39,5 +39,22 @@ $(function () {
 		max: 500000,
 	});
 
+
 	$(".filter-style").styler();
+
+	$(".catalog__filter-btngrid").on("click", function() {
+		$(this).toggleClass('catalog__filter-btn--active');
+		$(".catalog__filter-btnrow").removeClass('catalog__filter-btn--active');
+		$('.product-item__wrapper').removeClass('product-item__wrapper--list');
+
+	});
+
+	$(".catalog__filter-btnrow").on("click", function() {
+		$(this).toggleClass('catalog__filter-btn--active');
+		$(".catalog__filter-btngrid").removeClass('catalog__filter-btn--active');
+		$('.product-item__wrapper').addClass('product-item__wrapper--list');
+	});
+
+
+
 });
